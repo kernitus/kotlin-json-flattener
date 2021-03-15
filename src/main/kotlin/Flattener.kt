@@ -13,7 +13,7 @@ fun main() {
 }
 
 // Extension function: takes a JsonObject and flattens all values
-private fun JsonObject.flatten(output: JsonObject, currentKey: String = "") {
+fun JsonObject.flatten(output: JsonObject, currentKey: String = "") {
     for ((key, value) in this.entries) { // Look through all entries on top level
         val path = if (currentKey.isEmpty()) key else "$currentKey.$key" // Merge with subkey as required
         if (value is JsonObject) { // If deep entry, recursively flatten the value

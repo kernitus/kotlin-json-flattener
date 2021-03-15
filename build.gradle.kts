@@ -12,5 +12,5 @@ tasks.withType<Test> {
 
 dependencies {
     implementation("com.beust:klaxon:5.5")
-    testImplementation("io.kotest:kotest-runner-junit5:4.6.0")
+    testImplementation("io.kotest:kotest-runner-junit5:4.3.1")
 }
